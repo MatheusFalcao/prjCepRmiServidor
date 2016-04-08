@@ -13,7 +13,7 @@ public class MySql {
 	public boolean conecta(){
     try {
       Class.forName("com.mysql.jdbc.Driver");
-      this.c = DriverManager.getConnection("jdbc:mysql://localhost/cep" , "root", "senhadobanco");
+      this.c = DriverManager.getConnection("jdbc:mysql://localhost/cep" , "root", "senadobanco");
     } catch ( Exception e ) {
       System.err.println( e.getClass().getName() + ": " + e.getMessage() );
       System.exit(0);
